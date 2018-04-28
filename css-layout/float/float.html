@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Layout using Floats</title>
+    <link rel="stylesheet" href="float.css"/>
+  </head>
+  <body>
+      <div id="header">
+        <h1>Header</h1>
+      </div>
+
+      <div id="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+          <li><a href="/">Search</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar">
+          <h3>Sidebar 1</h3>
+          <ul>
+            <li>Filler Content 1</li>
+            <li>Filler Content 2</li>
+          </ul>
+      </div>
+
+      <div class="sidebar">
+          <h3>Sidebar 2</h3>
+          <ul>
+            <li>Filler Content 1</li>
+            <li>Filler Content 2</li>
+          </ul>
+      </div>
+
+      <div class="main">
+        <h2>Main 1</h2>
+        <p>A demonstration on how to position elements using float</p>
+      </div>
+
+      <div class="main">
+        <h2>Main 2</h2>
+        <p>As you can see floats tend to be more clunky and uses a lot of css hacks for it to work properly. The cons of using float on this example is that the main content does not fit properly to sidebar since float does not follow the "flow" of the page.</p>
+      </div>
+  </body>
+</html>
