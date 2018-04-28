@@ -17,20 +17,20 @@ body {
   padding: 0.5em;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .sidebar {
   background: #243c6f;
   padding: 1em;
   width: 30%;
-  float: right;
-  clear: right;
-  margin-top: 1em;
 }
 
 .main {
   background: #46546f;
   padding: 1em;
   width: 70%;
-  margin-top: 1em;
 }
 
 /* LIST ELEMENTS */
