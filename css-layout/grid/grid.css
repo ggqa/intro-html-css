@@ -1,0 +1,37 @@
+body {
+  font-family: Verdana, sans-serif;
+  background: #4576a0;
+  font-size: 18px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 0.5em;
+}
+
+.grid-container div {
+  background: #d0d0b0;
+  padding: 1em;
+}
+
+.grid-container > div:nth-child(odd) {
+  background: #f1f1df;
+}
+
+#header {
+  padding: 2em;
+  color: #fff;
+}
+
+#header > h1 {
+  font-size: 3em;
+}
+
+@media screen (max-width: 720px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
