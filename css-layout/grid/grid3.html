@@ -4,10 +4,12 @@
   <title>CSS Grid Practice</title>
   <style>
     /* Styling Section */
-    body {
+    html, body {
       background-color: #ffecb1;
       color: #fff2cc;
+      margin: 0;
       font-family: Verdana, sans-serif;
+      height: 100%;
     }
     .grid-container > div {
       font-size: 3em;
@@ -20,7 +22,7 @@
       background-color: #ff6f69;
     }
 
-    /* Layout Section */
+    /* Layout Section 
     .grid-container {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -29,21 +31,53 @@
     }
 
     .grid-container > div:nth-child(1) {
-      grid-column: 5 / -1;
+      grid-column: 1 / -3;
     }
 
     .grid-container > div:nth-child(2) {
       grid-row: 1 / -1;
-      grid-column: 1 / 5;
+      grid-column: -3 / -1;
     }
 
     .grid-container > div:nth-child(3) {
-      grid-column: 5 / -1;
+      grid-column: 1 / -3;
     }
 
     .grid-container > div:nth-child(4) {
-      grid-column: 5 / -1;
+      grid-column: 1 / -3;
     }
+
+    /* Layout Section 
+
+    /* Another form of Layout using grid-template-areas */
+    .grid-container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 80px auto 80px;
+      grid-gap: 3px;
+      grid-template-areas: 
+        "m m h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        "m m f f f f f f f f f f";
+    }
+
+    .grid-container > div:nth-child(1) {
+      grid-area: h;
+    }
+
+    .grid-container > div:nth-child(2) {
+      grid-area: m;
+    }
+
+    .grid-container > div:nth-child(3) {
+      grid-area: c;
+    }
+
+    .grid-container > div:nth-child(4) {
+      grid-area: f;
+    }
+
   </style>
 </head>
 <body>
