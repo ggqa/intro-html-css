@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Grid Practice</title>
+  <style>
+    /* Styling Section */
+    body {
+      background-color: #ffecb1;
+      color: #fff2cc;
+      font-family: Verdana, sans-serif;
+    }
+    .grid-container > div {
+      font-size: 3em;
+      background-color: #88d8b0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .grid-container > div:nth-child(odd) {
+      background-color: #ff6f69;
+    }
+
+    /* Layout Section */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 100px 200px 100px;
+      grid-gap: 3px;
+    }
+
+    .grid-container > div:nth-child(1) {
+      grid-column: 5 / -1;
+    }
+
+    .grid-container > div:nth-child(2) {
+      grid-row: 1 / -1;
+      grid-column: 1 / 5;
+    }
+
+    .grid-container > div:nth-child(3) {
+      grid-column: 5 / -1;
+    }
+
+    .grid-container > div:nth-child(4) {
+      grid-column: 5 / -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+</body>
+</html>
